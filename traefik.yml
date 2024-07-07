@@ -1,0 +1,21 @@
+entryPoints:
+  web:
+    address: ":80"
+  websecure:
+    address: ":443"
+
+providers:
+  docker:
+    exposedByDefault: false
+
+certificatesResolvers:
+  myresolver:
+    acme:
+      email: your-email@domain.com
+      storage: acme.json
+      httpChallenge:
+        entryPoint: web
+
+api:
+  dashboard: true
+  
