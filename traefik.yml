@@ -11,7 +11,7 @@ providers:
 certificatesResolvers:
   myresolver:
     acme:
-      email: your-email@domain.com
+      email: adeyemikafayat64.proxy.twinmom.com
       storage: acme.json
       httpChallenge:
         entryPoint: web
