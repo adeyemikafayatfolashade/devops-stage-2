@@ -1,20 +1,54 @@
-# Full-Stack FastAPI and React Template
+# Full Stack Web Application Deployment
 
-Welcome to the Full-Stack FastAPI and React template repository. This repository serves as a demo application for interns, showcasing how to set up and run a full-stack application with a FastAPI backend and a ReactJS frontend using ChakraUI.
+## Overview
 
-## Project Structure
+This project contains a full stack web application with a React frontend and a FastAPI backend, deployed using Docker and Traefik.
 
-The repository is organized into two main directories:
+## Requirements
 
-- **frontend**: Contains the ReactJS application.
-- **backend**: Contains the FastAPI application and PostgreSQL database integration.
+- Docker
+- Docker Compose
+- Domain name (or subdomain)
 
-Each directory has its own README file with detailed instructions specific to that part of the application.
+## Setup
 
-## Getting Started
+1. **Clone the Repository:**
 
-To get started with this template, please follow the instructions in the respective directories:
+   ```bash
+   git clone https://github.com/adeyemikafayatfolashade/devops-stage-2.git
 
-- [Frontend README](./frontend/README.md)
-- [Backend README](./backend/README.md)
+ ## Build and Run Docker Containers:
+ sudo docker-compose up -d
 
+ ## Access the Application:
+
+ Frontend: http://twinmom.com
+ Backend API: http://twinmom.com/api
+ Backend Docs: http://twinmom.com/docs
+ Backend Redoc: http://twinmom.com/redoc
+ Adminer: http://db.twinmom.com
+ Traefik Dashboard: http://proxy.twinmom.com
+
+ ## Deployment
+ Launch an EC2 Instance:
+ Use an Ubuntu AMI.
+ Allow traffic on ports 80 and 443.
+ Install Docker and Docker Compose:
+ sudo apt update
+ sudo apt install docker.io
+ sudo systemctl start docker
+ sudo systemctl enable docker
+ sudo apt install docker-compose
+
+ ## Run the Repository:
+ cd into the repository 
+ sudo docker-compose up -d
+
+ ## Links to the HNG Internship Program:
+ https://hng.tech/internship
+ https://hng.tech/hire
+ https://hng.tech/premium
+
+ ## License:
+ This project is licensed under the MIT License - see the LICENSE.md file for details.
+ 
